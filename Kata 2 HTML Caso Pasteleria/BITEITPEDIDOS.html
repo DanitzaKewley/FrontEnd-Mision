@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BITE IT PEDIDOS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+      }
+
+      /* Estilo de header */
+      header {
+        background-color: rgb(121, 230, 238);
+        height: 80px;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(61, 29, 119);
+      }
+      /* Estilo de footer */
+      footer {
+        background-color: rgb(121, 230, 238);
+        padding: 3px;
+        height: 120px;
+        text-align: center;
+        color: rgb(61, 29, 119);
+      }
+
+      /* Responsive layout */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <header>
+    <h1>Make it, BITE IT, Love it</h1>
+    <img src="BITE IT.jpg" alt="Logo BITE IT" width="150px" />
+  </header>
+  <body>
+    <pre>
+
+
+
+
+    
+
+
+
+    </pre>
+    <h2>PEDIDOS</h2>
+    <p>Hora de hacer <b>MAGIA!</b></p>
+    <br />
+    <table border>
+        <tr>
+            <th>Pedido listo</th>
+            <th>Nombre</th>
+            <th>Correo Electronico</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+            <th>Fecha y Hora de Entrega</th>
+            <th>Bizcochos</th>
+            <th>Cubierta</th>
+            <th>Decoración</th>
+            <th>Descripción</th>
+            <th>Pedido entregado</th>
+        </tr>
+        <tr>
+            <th><input class="form-check-input" type="checkbox" id="checkbox1" value="optionP1"/></th>
+            <th>Alba Ramirez</th>
+            <th>alba.r@correo.com</th>
+            <th>1122334455</th>
+            <th>calle 1, salamanca Guanajuato, México, 09876</th>
+            <th>18/03/2022   15:30pm</th>
+            <th>Bizcocho Zanahoria Chico $150</th>
+            <th>Buttercream $100-300</th>
+            <th>Cerezas $8pz</th>
+            <th>Pastel chico de zanahoria con Buttercream y 5 cerezas</th>
+            <th><button type="reset" color: black;> Eliminar Pedido</button></th>
+        </tr>
+        <tr>
+            <th><input class="form-check-input" type="checkbox" id="checkbox1" value="optionP1"/></th>
+            <th>Emma Balbuena </th>
+            <th>Emma@correo.com</th>
+            <th>0099887766</th>
+            <th>calle 2, salamanca Guanajuato, México, 09876</th>
+            <th>25/03/2022   19:00pm</th>
+            <th>Bizcocho Chocolate Mediano $200</th>
+            <th>Ganache $100-300</th>
+            <th>Fresas $5pz</th>
+            <th>Pastel mediano de chocolate, ganache y 20 Fresas</th>
+            <th><button type="reset" color: black;> Eliminar Pedido</button></th>
+        </tr>
+        <tr>
+            <th><input class="form-check-input" type="checkbox" id="checkbox1" value="optionP1"/></th>
+            <th>Lucas Rivas </th>
+            <th>Lucas264@correo.com</th>
+            <th>7392750471</th>
+            <th>calle 3, salamanca Guanajuato, México, 09876</th>
+            <th>11/03/2022   15:30pm</th>
+            <th>Bizcocho Red Velvet chico $150
+                <br>
+                Bizcocho Red Velvet Mediano $200
+                <br>
+                Bizcocho Red Velvet Grande $250
+            </th>
+            <th>Fondant $50-150</th>
+            <th>Otras Frutas 50-150</th>
+            <th>Pastel Red velvet 3 pisos, cubierto con fondant y relleno de frutas</th>
+            <th><button type="reset" color: black;> Eliminar Pedido</button></th>
+        </tr>
+    </table>
+    <br>
+    <h4><u>Control de Recursos Restantes BIZCOCHOS</u></h4>
+    <p><b>Coco</b></p>
+    <label for="numeroPastelesChico">Cantidad de Pasteles Chicos</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesChico"
+        placeholder="Pasteles Chicos"
+      />
+      <label for="numeroPastelesMediano">Cantidad de Pasteles Medianos</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesMediano"
+        placeholder="Pasteles Medianos"
+      />
+    <label for="numeroPastelesGrande">Cantidad de Pasteles Grandes</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesGrande"
+        placeholder="Pasteles Grandes"
+      />
+      <p> <b>Chocolate</b></p>
+    <label for="numeroPastelesChico">Cantidad de Pasteles Chicos</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesChico"
+        placeholder="Pasteles Chicos"
+      />
+      <label for="numeroPastelesMediano">Cantidad de Pasteles Medianos</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesMediano"
+        placeholder="Pasteles Medianos"
+      />
+    <label for="numeroPastelesGrande">Cantidad de Pasteles Grandes</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesGrande"
+        placeholder="Pasteles Grandes"
+      />
+      <p> <b>Fresa</b></p>
+    <label for="numeroPastelesChico">Cantidad de Pasteles Chicos</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesChico"
+        placeholder="Pasteles Chicos"
+      />
+      <label for="numeroPastelesMediano">Cantidad de Pasteles Medianos</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesMediano"
+        placeholder="Pasteles Medianos"
+      />
+    <label for="numeroPastelesGrande">Cantidad de Pasteles Grandes</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesGrande"
+        placeholder="Pasteles Grandes"
+      />
+      <p> <b>Red Velvet</b></p>
+    <label for="numeroPastelesChico">Cantidad de Pasteles Chicos</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesChico"
+        placeholder="Pasteles Chicos"
+      />
+      <label for="numeroPastelesMediano">Cantidad de Pasteles Medianos</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesMediano"
+        placeholder="Pasteles Medianos"
+      />
+    <label for="numeroPastelesGrande">Cantidad de Pasteles Grandes</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesGrande"
+        placeholder="Pasteles Grandes"
+      />
+      <p> <b>Zanahoria</b></p>
+    <label for="numeroPastelesChico">Cantidad de Pasteles Chicos</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesChico"
+        placeholder="Pasteles Chicos"
+      />
+      <label for="numeroPastelesMediano">Cantidad de Pasteles Medianos</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesMediano"
+        placeholder="Pasteles Medianos"
+      />
+    <label for="numeroPastelesGrande">Cantidad de Pasteles Grandes</label>
+      <input
+        type="number"
+        class="form-control"
+        id="numeroPastelesGrande"
+        placeholder="Pasteles Grandes"
+      />
+    <h4><u>Control de Recursos Restantes CUBIERTAS</u></h4>
+    <p><b>Buttercream</b></p>
+    <label for="cantidad">Nivel:</label>
+      <input type="radio" name="cantidadBc" value="1">Lleno
+      <input type="radio" name="cantidadBc" value="2">Hacer Pedido
+      <input type="radio" name="cantidadBc" value="3">Vacio
+    <p><b>Chantilly</b></p>
+    <label for="cantidad">Nivel:</label>
+        <input type="radio" name="cantidadC" value="1">Lleno
+        <input type="radio" name="cantidadC" value="2">Hacer Pedido
+        <input type="radio" name="cantidadC" value="3">Vacio
+    <p><b>Fondant</b></p>
+    <label for="cantidad">Nivel:</label>
+        <input type="radio" name="cantidadF" value="1">Lleno
+        <input type="radio" name="cantidadF" value="2">Hacer Pedido
+        <input type="radio" name="cantidadF" value="3">Vacio
+    <p><b>Ganache</b></p>
+    <label for="cantidad">Nivel:</label>
+        <input type="radio" name="cantidadG" value="1">Lleno
+        <input type="radio" name="cantidadG" value="2">Hacer Pedido
+        <input type="radio" name="cantidadG" value="3">Vacio
+    <p><b>Glaseado Real</b></p>
+    <label for="cantidad">Nivel:</label>
+        <input type="radio" name="cantidadGR" value="1">Lleno
+        <input type="radio" name="cantidadGR" value="2">Hacer Pedido
+        <input type="radio" name="cantidadGR" value="3">Vacio
+    <p><b>Merengue</b></p>
+    <label for="cantidad">Nivel:</label>
+        <input type="radio" name="cantidadM" value="1">Lleno
+        <input type="radio" name="cantidadM" value="2">Hacer Pedido
+        <input type="radio" name="cantidadM" value="3">Vacio
+    <h4><u>Control de Recursos Restantes DECORACIONES</u></h4>
+    <p><b>Cerezas</b></p>
+    <label for="cantidad">Hacer Pedido: </label>
+        <input type="radio" name="cantidadCD" value="1">Si
+        <input type="radio" name="cantidadCD" value="2">No
+    <p><b>Coco Rallado</b></p>
+    <label for="cantidad">Nivel:</label>
+        <input type="radio" name="cantidadCRD" value="1">Lleno
+        <input type="radio" name="cantidadCRD" value="2">Hacer Pedido
+        <input type="radio" name="cantidadCRD" value="3">Vacio
+    <p><b>Chocolate para Figuras</b></p>
+    <label for="cantidad">Nivel:</label>
+        <input type="radio" name="cantidadCFD" value="1">Lleno
+        <input type="radio" name="cantidadCFD" value="2">Hacer Pedido
+        <input type="radio" name="cantidadCFD" value="3">Vacio
+    <p><b>Fresas</b></p>
+    <label for="cantidad">Hacer Pedido: </label>
+        <input type="radio" name="cantidadFD" value="1">Si
+        <input type="radio" name="cantidadFD" value="2">No
+    <p><b>Frutos Rojos</b></p>
+    <label for="cantidad">Hacer Pedido: </label>
+        <input type="radio" name="cantidadFRD" value="1">Si
+        <input type="radio" name="cantidadFRD" value="2">No
+    <p><b>Otras Frutas</b></p>
+    <label for="cantidad">Hacer Pedido: </label>
+        <input type="radio" name="cantidadOFD" value="1">Si
+        <input type="radio" name="cantidadOFD" value="2">No
+    <br>
+    <br>
+    <br>
+  </body>
+  <footer>
+    <p>DIRECCIÓN: Boulevard Faja de Oro, Salamanca Guanajuato, Mexico, 36750</p>
+    <p>TELÉFONO: 01 464 113 0394</p>
+    <p>
+      HORARIO DE ATENCIÓN: Lunes-Viernes 10:00-18:00Hrs Sabados 9:00-15:00Hrs
+    </p>
+  </footer>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BITE IT FORMULARIO</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+      }
+
+      /* Estilo de header */
+      header {
+        background-color: rgb(121, 230, 238);
+        height: 80px;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(61, 29, 119);
+      }
+      /* Estilo de footer */
+      footer {
+        background-color: rgb(121, 230, 238);
+        padding: 3px;
+        height: 120px;
+        text-align: center;
+        color: rgb(61, 29, 119);
+      }
+
+      /* Responsive layout */
+      @media (max-width: 600px) {
+        nav,
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <header>
+    <h1>Make it, BITE IT, Love it</h1>
+    <img src="BITE IT.jpg" alt="Logo BITE IT" width="150px" />
+  </header>
+  <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2>Es momento de hacer magia! Elige tus ingredientes</h2>
+    <form>
+      <h3>Compartenos un poco de ti</h3>
+      <br />
+      <br />
+      <label for="nolmbre">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nombre"
+        placeholder="Tu nombre"
+      />
+      <br />
+      <br />
+      <label for="email">Correo Electronico</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        placeholder="tucorreo@correo.com"
+      />
+      <br />
+      <br />
+      <label for="teléfono">Teléfono</label>
+      <input
+        type="phone"
+        class="form-control"
+        id="teléfono"
+        placeholder="0987654321"
+      />
+      <br />
+      <br />
+      <label for="dirección">Dirección</label>
+      <input
+        type="text"
+        class="form-control"
+        id="calle"
+        placeholder="Nombre de la calle"
+      />
+      <input
+        type="number"
+        class="form-control"
+        id="númeroCasa"
+        placeholder="Número de casa"
+      />
+      <input
+        type="text"
+        class="form-control"
+        id="colonia"
+        placeholder="Nombre de la colonia"
+      />
+      <input
+        type="number"
+        class="form-control"
+        id="codigoPostal"
+        placeholder="Código Postal"
+      />
+      <br>
+      <br>
+      <label for="date">Fecha y hora en la que requiere el Pastel</label>
+      <input
+        type="date"
+        class="form-control"
+        id="Fecha"
+        placeholder="día-mes-año"
+      />
+      <input
+        type="time"
+        class="form-control"
+        id="Hora"
+        placeholder="Hora:Minutos"
+      />
+      <br />
+      <h4>Cuentanos cuantos pasteles vas a comer</h4>
+      <label for="numeroPastelesChico">Cantidad de Pasteles Chicos</label>
+      <select class="form-control" id="numeroPastelesChico">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <label for="numeroPastelesMediano">Cantidad de Pasteles Medianos</label>
+      <select class="form-control" id="numeroPastelesMediano">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <label for="numeroPastelesGrande">Cantidad de Pasteles Grandes</label>
+      <select class="form-control" id="numeroPastelesGrande">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <h4>Es momento de crear tu pastel, elige lo que más te gusta!</h4>
+      <label for="saborBizcocho"> <u> Elije el sabor de tu Bizcocho </u></label>
+      <p>Bizcocho Coco</p>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox1"
+        value="option1"
+      />
+      <label class="form-check-label" for="inlineCheckbox1"> Chico $150</label>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox2"
+        value="option2"
+      />
+      <label class="form-check-label" for="inlineCheckbox2">
+        Mediano $200</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox3"
+        value="option3"
+      />
+      <label class="form-check-label" for="inlineCheckbox3"> Grande $250</label>
+      <br />
+      <p>Bizcocho Chocolate</p>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox4"
+        value="option4"
+      />
+      <label class="form-check-label" for="inlineCheckbox4"> Chico $150</label>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox5"
+        value="option5"
+      />
+      <label class="form-check-label" for="inlineCheckbox5">
+        Mediano $200</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox6"
+        value="option6"
+      />
+      <label class="form-check-label" for="inlineCheckbox6"> Grande $250</label>
+      <br />
+      <p>Bizcocho Fresa</p>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox7"
+        value="option7"
+      />
+      <label class="form-check-label" for="inlineCheckbox7"> Chico $150</label>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox8"
+        value="option8"
+      />
+      <label class="form-check-label" for="inlineCheckbox8">
+        Mediano $200</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox9"
+        value="option9"
+      />
+      <label class="form-check-label" for="inlineCheckbox9"> Grande $250</label>
+      <br />
+      <p>Bizcocho Red Velvet</p>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox10"
+        value="option10"
+      />
+      <label class="form-check-label" for="inlineCheckbox10"> Chico $150</label>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox11"
+        value="option11"
+      />
+      <label class="form-check-label" for="inlineCheckbox11">
+        Mediano $200</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox12"
+        value="option12"
+      />
+      <label class="form-check-label" for="inlineCheckbox12">
+        Grande $250</label
+      >
+      <br />
+      <p>Bizcocho Zanahoria</p>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox13"
+        value="option13"
+      />
+      <label class="form-check-label" for="inlineCheckbox13"> Chico $150</label>
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox14"
+        value="option14"
+      />
+      <label class="form-check-label" for="inlineCheckbox14">
+        Mediano $200</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox15"
+        value="option15"
+      />
+      <label class="form-check-label" for="inlineCheckbox15">
+        Grande $250</label
+      >
+      <br />
+      <hr />
+      <label for="cubiertaPastel">
+        <u> Elije la cubierta de tu Pastel </u></label
+      >
+      <br />
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox16"
+        value="option16"
+      />
+      <label class="form-check-label" for="inlineCheckbox16">
+        Buttercream $100-300</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox17"
+        value="option17"
+      />
+      <label class="form-check-label" for="inlineCheckbox17">
+        Chantilly $30-100</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox18"
+        value="option18"
+      />
+      <label class="form-check-label" for="inlineCheckbox18">
+        Fondant $50-150</label
+      >
+      <br />
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox19"
+        value="option19"
+      />
+      <label class="form-check-label" for="inlineCheckbox19">
+        Ganache $100-300</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox20"
+        value="option20"
+      />
+      <label class="form-check-label" for="inlineCheckbox20">
+        Glaseado Real $50-150</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox21"
+        value="option21"
+      />
+      <label class="form-check-label" for="inlineCheckbox21">
+        Merengue $30-100</label
+      >
+      <br />
+      <hr />
+      <label for="decoracionPastel">
+        <u> Elije la Decoración de tu Pastel </u></label
+      >
+      <br />
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox22"
+        value="option22"
+      />
+      <label class="form-check-label" for="inlineCheckbox22">
+        Cerezas $8pz</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox23"
+        value="option23"
+      />
+      <label class="form-check-label" for="inlineCheckbox23">
+        Coco Rallado $40-80</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox24"
+        value="option24"
+      />
+      <label class="form-check-label" for="inlineCheckbox24">
+        Figura de Chocolate $10-25pz</label
+      >
+      <br />
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox25"
+        value="option25"
+      />
+      <label class="form-check-label" for="inlineCheckbox25">
+        Fresas $5pz</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox26"
+        value="option26"
+      />
+      <label class="form-check-label" for="inlineCheckbox26">
+        Frutos Rojos $50-150</label
+      >
+      <input
+        class="form-check-input"
+        type="checkbox"
+        id="inlineCheckbox27"
+        value="option27"
+      />
+      <label class="form-check-label" for="inlineCheckbox27">
+        Otras Frutas $50-150</label
+      >
+      <br />
+      <hr />
+      <h4>
+        Ayudanos a cumplir tus deseos, por favor describe como imaginas tu
+        pastel
+      </h4>
+      <br />
+      <textarea
+        class="form-control"
+        id="observaciones"
+        cols="80"
+        rows="10"
+        placeholder="Si deseas que tu pastel tenga más de 1 piso recuerda que puedes elegir bizcochos de diferentes tamañon y sabores y dinos por aquí como te gustaría acomodarlo"
+      ></textarea>
+      <p>Por favor checa tus respuestas antes de terminar tu pedido</p>
+      <button type="submit" style="background-color: rgb(223, 32, 121); border-color: rgb(236, 233, 31); color: black;"> TERMINAR PEDIDO</button>
+    </form>
+    <br />
+    <br />
+  </body>
+  <footer>
+    <p>DIRECCIÓN: Boulevard Faja de Oro, Salamanca Guanajuato, Mexico, 36750</p>
+    <p>TELÉFONO: 01 464 113 0394</p>
+    <p> HORARIO DE ATENCIÓN: Lunes-Viernes 10:00-18:00Hrs Sabados 9:00-15:00Hrs</p>
+    <br>
+    <a href="BITEITPEDIDOS.html" target="blank">
+    <input type="button" style="background-color: rgb(236, 233, 31); border-color: rgb(223, 32, 121); color: black;" value="Ver Pedido"/>
+    </a>
+  </footer>
+</html>
