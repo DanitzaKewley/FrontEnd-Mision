@@ -1,23 +1,8 @@
-const topcross = document.getElementById('topcross')
-const rightcross = document.getElementById('rightcross')
-const botcross = document.getElementById('botcross')
-const leftcross = document.getElementById('leftcross')
-const loadingMessage = document.getElementById("loadingMessage")
-const imageScreen = document.getElementById("imageScreen")
-const pokemonName = document.getElementById("pokemonName")
-const pokemonWeightValue = document.getElementById("pokemonWeightValue")
-const pokemonHeightValue = document.getElementById("pokemonHeightValue")
-const pokemonInput = document.getElementById("pokemonInput")
-const searchButton = document.getElementById("search")
-const lisTypes = document.getElementById('listTypes')
-const listMovs = document.getElementById('listMovs')
-const lisStasts = document.getElementById('listStats')
-
 let pokemonCounter = 1;
 let evolCount = -1;
 let evolves = []
 
-
+const topcross = document.getElementById('topcross')
 topcross.addEventListener('click',async function(){         
     resetLists()
     if(evolCount<evolves.length-1){
@@ -25,6 +10,7 @@ topcross.addEventListener('click',async function(){
     }      
     loadPokemonEvol(evolCount)
 })
+const rightcross = document.getElementById('rightcross')
 rightcross.addEventListener('click',async function(){
 
     setName('')
@@ -33,6 +19,7 @@ rightcross.addEventListener('click',async function(){
     pokemonCounter++
     await loadPokemon()
 })
+const botcross = document.getElementById('botcross')
 botcross.addEventListener('click', async function(){
     resetLists()
     if(evolCount>0){
@@ -40,6 +27,7 @@ botcross.addEventListener('click', async function(){
     }      
     loadPokemonEvol(evolCount)
 })
+const leftcross = document.getElementById('leftcross')
 leftcross.addEventListener('click',async function(){
     setName('')
     resetEvolvesData()
@@ -53,6 +41,13 @@ leftcross.addEventListener('click',async function(){
     await loadPokemon()
 })
 
+const imageScreen = document.getElementById("imageScreen")
+const pokemonName = document.getElementById("pokemonName")
+const pokemonWeightValue = document.getElementById("pokemonWeightValue")
+const pokemonHeightValue = document.getElementById("pokemonHeightValue")
+const pokemonInput = document.getElementById("pokemonInput")
+const searchButton = document.getElementById("search")
+const loadingMessage = document.getElementById("loadingMessage")
 searchButton.addEventListener('click',async event=>{   
     
     resetEvolvesData()    
@@ -74,6 +69,9 @@ searchButton.addEventListener('click',async event=>{
     }   
 })
 
+const lisTypes = document.getElementById('listTypes')
+const listMovs = document.getElementById('listMovs')
+const lisStasts = document.getElementById('listStats')
 async function searchPokemon(nameOrId){
     loadingMessage.setAttribute('class','loadingMessage-show')
     loadingMessage.innerHTML = 'Buscando pokemon...'
